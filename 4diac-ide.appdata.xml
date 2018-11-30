@@ -26,6 +26,7 @@
   </provides>
   <releases>
     <release version="1.9.1" date="2018-05-28" />
+    <release version="1.10.0" date="2018-11-29" />
   </releases>
 
   <categories>
