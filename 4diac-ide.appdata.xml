@@ -25,6 +25,7 @@
     <binary>4diac-ide</binary>
   </provides>
   <releases>
+    <release version="1.10.1" date="2019-02-06" />
     <release version="1.10.0" date="2018-11-29" />
     <release version="1.9.1" date="2018-05-28" />
   </releases>
