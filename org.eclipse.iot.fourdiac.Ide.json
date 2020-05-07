@@ -31,9 +31,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.12/4diac-ide/4diac-ide-incubation_1.12.0-linux.gtk.x86_64.tar.gz&r=1",
-                    "sha256": "c763c112d82fb8c5e7632ad9009ba36e255285ca9d5bf092a56aeaf296e3fdf1",
-                    "dest-filename": "4diac-ide-incubation_1.12.0_linux.gtk.x86_64.tar.gz",
+                    "url": "https://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.12/4diac-ide/4diac-ide-incubation_1.12.1-linux.gtk.x86_64.tar.gz&r=1",
+                    "sha256": "c806e6564465c3e29494cd2890d05da7a3c9d97abef50c6dca7e2794b9b94356",
+                    "dest-filename": "4diac-ide-incubation_1.12.1_linux.gtk.x86_64.tar.gz",
                     "dest": "4diac-ide"
                 },
                 {
