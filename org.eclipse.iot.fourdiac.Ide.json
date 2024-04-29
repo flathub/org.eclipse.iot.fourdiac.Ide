@@ -1,7 +1,7 @@
 {
     "app-id": "org.eclipse.iot.fourdiac.Ide",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.openjdk11"
@@ -23,7 +23,9 @@
         {
             "name": "openjdk",
             "buildsystem": "simple",
-            "build-commands": [ "/usr/lib/sdk/openjdk11/install.sh" ]
+            "build-commands": [
+                "/usr/lib/sdk/openjdk11/install.sh"
+            ]
         },
         {
             "name": "4diac-ide",
