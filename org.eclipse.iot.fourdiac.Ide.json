@@ -1,7 +1,7 @@
 {
     "app-id": "org.eclipse.iot.fourdiac.Ide",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.openjdk11"
@@ -32,7 +32,7 @@
                 {
                     "type": "archive",
                     "url": "https://www.eclipse.org/downloads/download.php?file=/4diac/releases/2.0/4diac-ide/4diac-ide_2.0.1-linux.gtk.x86_64.tar.gz&mirror_id=1",
-                    "sha256": "6a4adb6e03827a4dd80d54e1fa27805afc333125a95e0eee55bf1539dff61136",
+                    "sha256": "c4941aa9c0f27f9ced207cddb5df2a2b5c486568e08d1a32143a737a8e273a9c",
                     "dest-filename": "4diac-ide_2.0.1-linux.gtk.x86_64.tar.gz",
                     "dest": "4diac-ide"
                 },
