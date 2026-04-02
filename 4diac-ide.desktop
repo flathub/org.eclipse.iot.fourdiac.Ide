@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Eclipse 4DIAC IDE
-Exec=/app/4diac-ide/4diac-ide
+Exec=4diac-ide
 Type=Application
 Categories=GTK;Development;IDE;
 Terminal=false
