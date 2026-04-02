@@ -53,6 +53,7 @@
                 "install -Dm644 4diac-ide.desktop /app/share/applications/org.eclipse.iot.fourdiac.Ide.desktop",
                 "install -Dm644 4diac-ide.appdata.xml /app/share/metainfo/org.eclipse.iot.fourdiac.Ide.appdata.xml",
                 "install -Dm644 4diac-ide-512.png /app/share/icons/hicolor/512x512/apps/org.eclipse.iot.fourdiac.Ide.png",
+                "find 4diac-ide/plugins/ -path \"*/com/sun/jna/*/*.so\" ! -path \"*/linux-x86-64/*\" -delete",
                 "cp -av 4diac-ide /app",
                 "ln -s /app/jre /app/4diac-ide/jre",
                 "echo '--add-modules=ALL-SYSTEM' >> /app/4diac-ide/4diac-ide.ini"
