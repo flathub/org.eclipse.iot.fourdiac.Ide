@@ -1,10 +1,10 @@
 {
     "app-id": "org.eclipse.iot.fourdiac.Ide",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.openjdk11"
+        "org.freedesktop.Sdk.Extension.openjdk17"
     ],
     "command": "/app/4diac-ide/4diac-ide",
     "finish-args": [
@@ -23,7 +23,7 @@
         {
             "name": "openjdk",
             "buildsystem": "simple",
-            "build-commands": [ "/usr/lib/sdk/openjdk11/install.sh" ]
+            "build-commands": [ "/usr/lib/sdk/openjdk17/install.sh" ]
         },
         {
             "name": "4diac-ide",
@@ -31,9 +31,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.eclipse.org/downloads/download.php?file=/4diac/releases/2.0/4diac-ide/4diac-ide_2.0.1-linux.gtk.x86_64.tar.gz&mirror_id=1",
-                    "sha256": "c4941aa9c0f27f9ced207cddb5df2a2b5c486568e08d1a32143a737a8e273a9c",
-                    "dest-filename": "4diac-ide_2.0.1-linux.gtk.x86_64.tar.gz",
+                    "url": "https://www.eclipse.org/downloads/download.php?file=/4diac/releases/3.1/4diac-ide/4diac-ide_3.1.0-linux.gtk.x86_64.tar.gz&mirror_id=1",
+                    "sha512": "3fa94afec01d735d1956a4b2bb0f1c3283006af09f23a15f160e89834fcd4e41b319475e1b1fd0c427ae3ff9512f4512c9f10e198d44433308ba3009997788a2",
+                    "dest-filename": "4diac-ide.gtk.x86_64.tar.gz",
                     "dest": "4diac-ide"
                 },
                 {
@@ -46,20 +46,13 @@
                 },
                 {
                     "type": "file",
-                    "path": "4diac-ide-128.png"
-                },
-                {
-                    "type": "file",
-                    "path": "4diac-ide-256.png"
+                    "path": "4diac-ide-512.png"
                 }
             ],
             "build-commands": [
-                "mkdir -p /app/share/applications",
-                "mkdir -p /app/share/metainfo",
-                "mkdir -p /app/share/icons/hicolor/{128x128,256x256}/apps",
-                "install 4diac-ide.desktop /app/share/applications/org.eclipse.iot.fourdiac.Ide.desktop",
-                "install 4diac-ide.appdata.xml /app/share/metainfo/org.eclipse.iot.fourdiac.Ide.appdata.xml",
-                "for i in 128 256; do install 4diac-ide-$i.png /app/share/icons/hicolor/${i}x${i}/apps/org.eclipse.iot.fourdiac.Ide.png; done",
+                "install -Dm644 4diac-ide.desktop /app/share/applications/org.eclipse.iot.fourdiac.Ide.desktop",
+                "install -Dm644 4diac-ide.appdata.xml /app/share/metainfo/org.eclipse.iot.fourdiac.Ide.appdata.xml",
+                "install -Dm644 4diac-ide-512.png /app/share/icons/hicolor/512x512/apps/org.eclipse.iot.fourdiac.Ide.png",
                 "cp -av 4diac-ide /app",
                 "ln -s /app/jre /app/4diac-ide/jre",
                 "echo '--add-modules=ALL-SYSTEM' >> /app/4diac-ide/4diac-ide.ini"
