@@ -4,6 +4,8 @@
   <name>Eclipse 4DIAC IDE</name>
   <summary>An OpenSource IEC 61499 compatible PLC IDE</summary>
   <url type="homepage">https://www.eclipse.org/4diac/</url>
+  <url type="bugtracker">https://github.com/eclipse-4diac/4diac-ide/issues</url>
+  <url type="vcs-browser">https://github.com/eclipse-4diac/4diac-ide</url>
   <project_license>EPL-2.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
 
