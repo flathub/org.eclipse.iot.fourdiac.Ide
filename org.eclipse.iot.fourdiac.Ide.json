@@ -6,7 +6,7 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.openjdk17"
     ],
-    "command": "/app/4diac-ide/4diac-ide",
+    "command": "4diac-ide",
     "finish-args": [
         "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
         "--env=JAVA_HOME=/app/jre",
@@ -56,6 +56,8 @@
                 "find 4diac-ide/plugins/ -path \"*/com/sun/jna/*/*.so\" ! -path \"*/linux-x86-64/*\" -delete",
                 "cp -av 4diac-ide /app",
                 "ln -s /app/jre /app/4diac-ide/jre",
+                "mkdir /app/bin",
+                "ln -s /app/4diac-ide/4diac-ide /app/bin/4diac-ide",
                 "echo '--add-modules=ALL-SYSTEM' >> /app/4diac-ide/4diac-ide.ini"
             ]
         }
